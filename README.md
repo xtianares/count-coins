@@ -23,7 +23,7 @@ The app should now be running on <http://localhost:3000>. The Express server sho
 ### Running tests
 
 ```
-npm client
+cd client
 ```
 
 and then run:
