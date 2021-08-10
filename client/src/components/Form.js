@@ -36,7 +36,7 @@ function Button(props) {
           <div className="input-group-prepend">
             <div className="input-group-text">$</div>
           </div>
-          <input className={!error ? "form-control dollar-amount" : "form-control dollar-amount is-invalid" } onChange={handleChange} onBlur={handleValidation} value={dollarAmount} type="text" placeholder="0.00" />
+          <input className={!error ? "form-control dollar-amount" : "form-control dollar-amount is-invalid" } onChange={handleChange} onBlur={handleValidation} value={dollarAmount} type="text" placeholder="0.00" name="amount" aria-label="amount" />
           <div className="input-group-append">
             <button className="btn btn-primary btn-lg" type="submit">Count Coins</button>
           </div>
