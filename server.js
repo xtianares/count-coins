@@ -16,8 +16,8 @@ app.get("/api/:amount", (req, res) => {
   const inputAmount = req.params.amount
 
   const coinValuesInCents = {
-    "Silver-Dollar": 100, 
-    "Half-Dollar": 50, 
+    "Silver Dollar": 100, 
+    "Half Dollar": 50, 
     "Quarter": 25, 
     "Dime": 10, 
     "Nickel": 5, 
@@ -27,7 +27,7 @@ app.get("/api/:amount", (req, res) => {
   const coinNames = Object.keys(coinValuesInCents);
 
   // convert the dollar amount to cents
-  let amountInCents = inputAmount * 100;
+  let amountInCents = Math.round(inputAmount * 100);
   const result = {};
 
   for (let i = 0; i < coinsInCents.length; i++) {

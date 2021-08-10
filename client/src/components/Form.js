@@ -1,4 +1,3 @@
-
 import React, {useState} from "react";
 
 function Button(props) {
@@ -15,6 +14,9 @@ function Button(props) {
   const handleSubmit = (event) => {
     event.preventDefault();
     handleValidation();
+    if (!error) {
+      props.getCoinCount(dollarAmount);
+    }
   }
 
   const handleValidation = (event) => {
