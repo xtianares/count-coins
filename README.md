@@ -1,6 +1,6 @@
 # Count Least Number Of Coins
 
-The front-end React app will auto-reload as it's updated via webpack dev server, and the backend Express app will auto-reload independently with nodemon.
+The front-end React app will auto-reload as it's updated via webpack dev server, and the backend Express app will auto-reload independently with nodemon. https://count-coins.herokuapp.com/
 
 ## Starting the app locally
 
